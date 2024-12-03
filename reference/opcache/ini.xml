@@ -962,6 +962,13 @@
       startup as root before switching to an unprivileged system user. Preloading as root is not
       allowed by default for security reasons, unless this directive is explicitly set to
       <literal>root</literal>.
+
+      <note>
+       <simpara>
+        As of PHP 8.3.0 and when using the CLI or phpdbg SAPIs, the directive isn't required
+        by the preloading to be set when running as root.
+       </simpara>
+      </note>
      </para>
     </listitem>
    </varlistentry>
